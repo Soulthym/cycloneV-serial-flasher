@@ -28,7 +28,7 @@ this was not tested without screen installed.
 - A reliable way to flash the FPGA  
 
 ## Use
-`flashfpga.sh <raw binary file>`
+`./flashfpga.sh <raw binary file>`
 
 ## Use Case
 In case your version of quartus does not detect the USB-Blaster interface,
@@ -42,4 +42,7 @@ I did however have access to documentation on how the SoC could flash the FPGA o
 (see http://csys.yonsei.ac.kr/lect/embed/Linux-DE1-SoC.pdf 2.2 & page 32 for more info).
 
 ## Notes
-With some tweaking you can actually send any file to the target. See it as a cp over ttyUSB.
+With some tweaking you can actually send any file to the target. See it as a "hacky" cp over ttyUSB.  
+This is a very hacky implementation but it does the job for my use-case.
+Here is a link to the related StackExchange thread:
+https://unix.stackexchange.com/questions/548205/copy-a-file-over-serial-connection/
